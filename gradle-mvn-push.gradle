@@ -71,7 +71,7 @@ def configurePom(pom) {
 }
 
 afterEvaluate { project ->
-    publishing {
+    uploadArchives {
         repositories {
             maven {
                 def releasesRepoUrl = getReleaseRepositoryUrl()
